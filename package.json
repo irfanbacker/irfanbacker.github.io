@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build-static": "next build && next export -o 'docs' && npm run build-static-repair-index",
-    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"./docs/_next/static\" docs/index.html",
+    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"./_next/static\" docs/index.html docs/404.html",
     "start": "next start"
   },
   "dependencies": {
